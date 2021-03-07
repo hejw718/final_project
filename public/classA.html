@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<h1>ClassA</h1>
+
+<body>
+    <div class="content">
+        <form id="add-students-form">
+            <input type="text" name="name" placeholder="輸入 Student's name">
+            <input type="text" name="gender" placeholder="輸入 Student's gender">
+            <input type="text" name="age" placeholder="輸入 Student's age">
+            <button> Add a student </button>
+        </form>
+        <table id="stu-table" cellpadding="10" border="1" width="100%">
+            　<tr>
+                　 <td>姓名</td>
+                　 <td>年齡</td>
+                <td>性別</td>
+                　
+            </tr>
+        </table>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-firestore.js"></script>
+<script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDRADBdDhll1pZrjC4dfVXBl8EhLtN8hww",
+        authDomain: "hejw-718.firebaseapp.com",
+        databaseURL: "https://hejw-718-default-rtdb.firebaseio.com",
+        projectId: "hejw-718",
+        storageBucket: "hejw-718.appspot.com",
+        messagingSenderId: "694603649075",
+        appId: "1:694603649075:web:f256393b6dc77e53d5d346",
+        measurementId: "G-GBB4J8J42V"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+</script>
+<script src="app.js"></script>
+
+</html>
