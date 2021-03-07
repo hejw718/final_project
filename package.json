@@ -1,16 +1,25 @@
 {
-  "name": "node_project",
+  "name": "Final_project-master",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node main.js"
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hejw718/final_project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "bugs": {
+    "url": "https://github.com/hejw718/final_project/issues"
+  },
+  "homepage": "https://github.com/hejw718/final_project#readme"
 }
